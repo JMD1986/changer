@@ -12,4 +12,16 @@ class ChangerTest < MiniTest::Test
     assert_respond_to(Changer, :run)
   end
 
+  def test_method_takes_argument
+    assert_equal(Changer.run(1), 1)
+  end
+
+  def test_method_takes_argument
+    assert_equal(Changer.run(2), 2)
+  end
+
+  def test_nickel_return_1
+    assert_equal(Changer.run(5), 1)
+  end
+
 end
